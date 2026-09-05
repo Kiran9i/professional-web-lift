@@ -10,33 +10,63 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as NumerologyRouteImport } from './routes/numerology'
+import { Route as RestSessionsRouteImport } from './routes/rest-sessions'
+import { Route as ShopRouteImport } from './routes/shop'
 
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
   getParentRoute: () => rootRouteImport,
 } as any)
+const NumerologyRoute = NumerologyRouteImport.update({
+  id: '/numerology',
+  path: '/numerology',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const RestSessionsRoute = RestSessionsRouteImport.update({
+  id: '/rest-sessions',
+  path: '/rest-sessions',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const ShopRoute = ShopRouteImport.update({
+  id: '/shop',
+  path: '/shop',
+  getParentRoute: () => rootRouteImport,
+} as any)
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/numerology': typeof NumerologyRoute
+  '/rest-sessions': typeof RestSessionsRoute
+  '/shop': typeof ShopRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/numerology': typeof NumerologyRoute
+  '/rest-sessions': typeof RestSessionsRoute
+  '/shop': typeof ShopRoute
 }
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/numerology': typeof NumerologyRoute
+  '/rest-sessions': typeof RestSessionsRoute
+  '/shop': typeof ShopRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/'
+  fullPaths: '/' | '/numerology' | '/rest-sessions' | '/shop'
   fileRoutesByTo: FileRoutesByTo
-  to: '/'
-  id: '__root__' | '/'
+  to: '/' | '/numerology' | '/rest-sessions' | '/shop'
+  id: '__root__' | '/' | '/numerology' | '/rest-sessions' | '/shop'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  NumerologyRoute: typeof NumerologyRoute
+  RestSessionsRoute: typeof RestSessionsRoute
+  ShopRoute: typeof ShopRoute
 }
 
 declare module '@tanstack/react-router' {
@@ -48,11 +78,35 @@ declare module '@tanstack/react-router' {
       preLoaderRoute: typeof IndexRouteImport
       parentRoute: typeof rootRouteImport
     }
+    '/numerology': {
+      id: '/numerology'
+      path: '/numerology'
+      fullPath: '/numerology'
+      preLoaderRoute: typeof NumerologyRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/rest-sessions': {
+      id: '/rest-sessions'
+      path: '/rest-sessions'
+      fullPath: '/rest-sessions'
+      preLoaderRoute: typeof RestSessionsRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/shop': {
+      id: '/shop'
+      path: '/shop'
+      fullPath: '/shop'
+      preLoaderRoute: typeof ShopRouteImport
+      parentRoute: typeof rootRouteImport
+    }
   }
 }
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  NumerologyRoute: NumerologyRoute,
+  RestSessionsRoute: RestSessionsRoute,
+  ShopRoute: ShopRoute,
 }
 export const routeTree = rootRouteImport
   ._addFileChildren(rootRouteChildren)
