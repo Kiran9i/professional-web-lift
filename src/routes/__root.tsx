@@ -7,7 +7,7 @@ import {
   HeadContent,
   Scripts,
 } from "@tanstack/react-router";
-import { useEffect, type ReactNode } from "react";
+import { useEffect, useState, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
@@ -77,14 +77,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Lovable App" },
-      { name: "description", content: "Lovable Generated Project" },
-      { name: "author", content: "Lovable" },
-      { property: "og:title", content: "Lovable App" },
-      { property: "og:description", content: "Lovable Generated Project" },
+      { title: "Neuro Pathway | R.E.S.T Sessions by Shetall" },
+      { name: "description", content: "Rapid Evolve Self Transformation (R.E.S.T) sessions combining Clinical Hypnosis, Regression, NLP, CBT and Neuro Science to resolve deep-rooted patterns." },
+      { name: "author", content: "Shetall" },
+      { property: "og:title", content: "Neuro Pathway | R.E.S.T Sessions by Shetall" },
+      { property: "og:description", content: "Rapid Evolve Self Transformation (R.E.S.T) sessions combining Clinical Hypnosis, Regression, NLP, CBT and Neuro Science to resolve deep-rooted patterns." },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { name: "twitter:site", content: "@Lovable" },
+      { name: "twitter:site", content: "@NeuroPathway" },
     ],
     links: [
       {
@@ -92,6 +92,12 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         href: appCss,
       },
       { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "preconnect", href: "https://fonts.googleapis.com" },
+      { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
+      {
+        rel: "stylesheet",
+        href: "https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500&display=swap",
+      },
     ],
   }),
   shellComponent: RootShell,
@@ -114,13 +120,93 @@ function RootShell({ children }: { children: ReactNode }) {
   );
 }
 
+function Header() {
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 40);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
+
+  const navLinks = [
+    { label: "Home", href: "#home" },
+    { label: "About", href: "#about" },
+    { label: "Approach", href: "#approach" },
+    { label: "Services", href: "#services" },
+    { label: "Testimonials", href: "#testimonials" },
+    { label: "Contact", href: "#contact" },
+  ];
+
+  return (
+    <header
+      className={`fixed top-0 left-0 right-0 z-50 transition-all duration-300 ${
+        scrolled ? "bg-background/90 backdrop-blur-md shadow-sm" : "bg-transparent"
+      }`}
+    >
+      <div className="container-tight flex h-16 items-center justify-between">
+        <a href="#home" className="flex items-center gap-2">
+          <span className="text-xl font-semibold tracking-tight text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
+            Neuro Pathway
+          </span>
+        </a>
+        <nav className="hidden items-center gap-8 md:flex">
+          {navLinks.map((link) => (
+            <a
+              key={link.href}
+              href={link.href}
+              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+            >
+              {link.label}
+            </a>
+          ))}
+        </nav>
+        <a
+          href="#contact"
+          className="hidden rounded-full bg-primary px-5 py-2 text-sm font-medium text-primary-foreground transition-colors hover:bg-primary/90 md:inline-flex"
+        >
+          Book a Free Call
+        </a>
+      </div>
+    </header>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="border-t border-border bg-background py-12">
+      <div className="container-tight flex flex-col items-center justify-between gap-6 md:flex-row">
+        <div className="text-center md:text-left">
+          <p className="text-lg font-medium text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
+            Neuro Pathway
+          </p>
+          <p className="text-sm text-muted-foreground">
+            R.E.S.T Sessions by Shetall — Changing Your Reality
+          </p>
+        </div>
+        <div className="flex items-center gap-6 text-sm text-muted-foreground">
+          <a href="#home" className="hover:text-foreground">Home</a>
+          <a href="#about" className="hover:text-foreground">About</a>
+          <a href="#services" className="hover:text-foreground">Services</a>
+          <a href="#contact" className="hover:text-foreground">Contact</a>
+        </div>
+      </div>
+      <div className="container-tight mt-8 text-center text-xs text-muted-foreground">
+        © {new Date().getFullYear()} Neuro Pathway. All rights reserved.
+      </div>
+    </footer>
+  );
+}
+
 function RootComponent() {
   const { queryClient } = Route.useRouteContext();
 
   return (
     <QueryClientProvider client={queryClient}>
-      {/* Required: nested routes render here. Removing <Outlet /> breaks all child routes. */}
+      <Header />
       <Outlet />
+      <Footer />
     </QueryClientProvider>
   );
 }
