@@ -11,6 +11,7 @@ import { useEffect, useState, type ReactNode } from "react";
 
 import appCss from "../styles.css?url";
 import { reportLovableError } from "../lib/lovable-error-reporting";
+import logo from "@/assets/neuropathway-logo.png";
 
 function NotFoundComponent() {
   return (
@@ -91,7 +92,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         rel: "stylesheet",
         href: appCss,
       },
-      { rel: "icon", href: "/favicon.ico", type: "image/x-icon" },
+      { rel: "icon", href: "/favicon.png", type: "image/png" },
       { rel: "preconnect", href: "https://fonts.googleapis.com" },
       { rel: "preconnect", href: "https://fonts.gstatic.com", crossOrigin: "anonymous" },
       {
@@ -153,8 +154,9 @@ function Header() {
       }`}
     >
       <div className="container-tight flex h-16 items-center justify-between">
-        <a href="#home" className="flex items-center gap-2">
-          <span className="text-xl font-semibold tracking-tight text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
+        <a href="#home" className="flex items-center gap-3">
+          <img src={logo} alt="Neuro Pathway logo" width={56} height={56} className="h-14 w-14 object-contain" />
+          <span className="whitespace-nowrap text-xl font-semibold tracking-tight text-foreground" style={{ fontFamily: "var(--font-heading)" }}>
             Neuro Pathway
           </span>
         </a>
