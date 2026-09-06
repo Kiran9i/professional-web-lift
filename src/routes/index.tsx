@@ -37,6 +37,7 @@ function Index() {
     <main>
       <Hero />
       <About />
+      <Philosophy />
       <Approach />
       <Services />
       <Testimonials />
