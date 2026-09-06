@@ -16,7 +16,7 @@ import {
 } from "lucide-react";
 
 import heroBg from "@/assets/hero-bg.jpg";
-import aboutPortrait from "@/assets/about-portrait.jpg";
+import aboutPortrait from "@/assets/shetall-portrait.jpg";
 
 export const Route = createFileRoute("/")({
   head: () => ({

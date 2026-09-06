@@ -131,12 +131,18 @@ function Header() {
   }, []);
 
   const navLinks = [
-    { label: "Home", href: "#home" },
-    { label: "About", href: "#about" },
-    { label: "Approach", href: "#approach" },
-    { label: "Services", href: "#services" },
-    { label: "Testimonials", href: "#testimonials" },
-    { label: "Contact", href: "#contact" },
+    { label: "Home", href: "/#home" },
+    { label: "About", href: "/#about" },
+    { label: "Approach", href: "/#approach" },
+    { label: "Services", href: "/#services" },
+    { label: "Testimonials", href: "/#testimonials" },
+    { label: "Contact", href: "/#contact" },
+  ];
+
+  const pageLinks = [
+    { label: "R.E.S.T Sessions", to: "/rest-sessions" as const },
+    { label: "Numerology", to: "/numerology" as const },
+    { label: "Shop", to: "/shop" as const },
   ];
 
   return (
@@ -160,6 +166,16 @@ function Header() {
             >
               {link.label}
             </a>
+          ))}
+          {pageLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+              activeProps={{ className: "text-sm font-medium text-primary" }}
+            >
+              {link.label}
+            </Link>
           ))}
         </nav>
         <a

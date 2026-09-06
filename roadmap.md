@@ -4,5 +4,7 @@
 - [x] Define design system and build homepage sections
 - [x] Build and verify preview
 - [x] Run security scan
-- [ ] Replace AI-generated about portrait with original Shetall photo
-- [ ] Rebuild and republish
+- [x] Replace AI-generated about portrait with original Shetall photo
+- [x] Add R.E.S.T Sessions, Numerology, Shop pages and menu links
+- [x] Republish
+- [ ] Add real WhatsApp number to Shop order button (user to provide)
