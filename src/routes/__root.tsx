@@ -133,6 +133,7 @@ function Header() {
   const navLinks = [
     { label: "Home", href: "/#home" },
     { label: "About", href: "/#about" },
+    { label: "Philosophy", href: "/#philosophy" },
     { label: "Approach", href: "/#approach" },
     { label: "Services", href: "/#services" },
     { label: "Testimonials", href: "/#testimonials" },
