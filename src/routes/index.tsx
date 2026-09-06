@@ -128,19 +128,24 @@ function About() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-primary">About Me</p>
             <h2 className="mt-3 text-4xl font-medium text-foreground sm:text-5xl">
-              Rest in Peace While You Are Living
+              I'm Shetall, creator of R.E.S.T Sessions
             </h2>
-            <p className="mt-6 text-xl font-medium leading-relaxed text-foreground">
-              This tagline is more than a phrase — it is the heart of MindTatvas.
+            <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
+              <span className="font-semibold text-foreground">Rapid Evolve Self Transformation</span>{" "}
+              is a scientific approach to resolve deep rooted patterns. It combines{" "}
+              <span className="italic text-foreground">
+                Clinical Hypnosis, Trans-personal Regression, past life regressions, NLP, CBT and Neuro Science Principles
+              </span>
+              .
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              True peace is not something we find at the end of life; it is something we can experience now, in this moment, by releasing what weighs us down and reconnecting with our authentic selves.
+              I believe any issue in our life is not from today — we carry many fragments of the same issue from the past. The root cause in the past needs to be identified to fix the current surfaced issue.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              I believe that everyone has the capacity for deep transformation. Sometimes we just need the right guide and the right tools to access it. That is what MindTatvas is here to provide — a safe, compassionate space where you can heal, evolve, and discover the peace that has always been within you.
+              My work is a combination of <span className="font-semibold text-foreground">Logic & Spirituality</span>. I also deeply value <span className="font-semibold text-foreground">Numerology</span> as it strongly enhances your hidden potentials, works on your brain pattern, and enables you to live an aligned life with your life path.
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-              Whether you are struggling with anxiety, addiction, weight management, or simply feeling stuck in life, know that change is possible — and it can happen faster than you think. The subconscious mind is incredibly powerful, and when we work with it rather than against it, transformation becomes not just possible, but natural.
+              Life is simple and no-one needs to spend ages to resolve any pattern. I myself overcame many deep patterns in my life which made me the person that I am today.
             </p>
           </div>
         </div>
