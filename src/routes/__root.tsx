@@ -167,6 +167,16 @@ function Header() {
               {link.label}
             </a>
           ))}
+          {pageLinks.map((link) => (
+            <Link
+              key={link.to}
+              to={link.to}
+              className="text-sm font-medium text-foreground/80 transition-colors hover:text-primary"
+              activeProps={{ className: "text-sm font-medium text-primary" }}
+            >
+              {link.label}
+            </Link>
+          ))}
         </nav>
         <a
           href="#contact"
