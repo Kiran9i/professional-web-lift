@@ -90,7 +90,7 @@ function Shop() {
             Send a message and we will share pricing, delivery and availability.
           </p>
           <a
-            href="https://wa.me/"
+            href="https://wa.me/971585914324"
             target="_blank"
             rel="noopener noreferrer"
             className="mt-10 inline-flex items-center justify-center rounded-full bg-background px-8 py-4 font-medium text-foreground transition-all hover:shadow-lg"

@@ -7,4 +7,7 @@
 - [x] Replace AI-generated about portrait with original Shetall photo
 - [x] Add R.E.S.T Sessions, Numerology, Shop pages and menu links
 - [x] Republish
-- [ ] Add real WhatsApp number to Shop order button (user to provide)
+- [x] Add real WhatsApp number to Shop order button (+971585914324, hidden behind icon/button)
+- [x] Move menu to left sidebar, group Home/Services submenus
+- [ ] Verify GUI end-to-end, then publish
+- [ ] Provide Cloudflare hosting guide
