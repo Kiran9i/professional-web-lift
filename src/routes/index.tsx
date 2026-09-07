@@ -164,13 +164,13 @@ function Philosophy() {
           Rest in Peace While You Are Living
         </h2>
         <p className="mt-6 text-xl font-medium leading-relaxed text-foreground">
-          This tagline is more than a phrase — it is the heart of MindTatvas.
+          This tagline is more than a phrase — it is the heart of Neuro Pathway.
         </p>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           True peace is not something we find at the end of life; it is something we can experience now, in this moment, by releasing what weighs us down and reconnecting with our authentic selves.
         </p>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
-          I believe that everyone has the capacity for deep transformation. Sometimes we just need the right guide and the right tools to access it. That is what MindTatvas is here to provide — a safe, compassionate space where you can heal, evolve, and discover the peace that has always been within you.
+          I believe that everyone has the capacity for deep transformation. Sometimes we just need the right guide and the right tools to access it. That is what Neuro Pathway is here to provide — a safe, compassionate space where you can heal, evolve, and discover the peace that has always been within you.
         </p>
         <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
           Whether you are struggling with anxiety, addiction, weight management, or simply feeling stuck in life, know that change is possible — and it can happen faster than you think. The subconscious mind is incredibly powerful, and when we work with it rather than against it, transformation becomes not just possible, but natural.
