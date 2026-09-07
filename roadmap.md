@@ -9,5 +9,5 @@
 - [x] Republish
 - [x] Add real WhatsApp number to Shop order button (+971585914324, hidden behind icon/button)
 - [x] Move menu to left sidebar, group Home/Services submenus
-- [ ] Verify GUI end-to-end, then publish
-- [ ] Provide Cloudflare hosting guide
+- [x] Verify GUI end-to-end, then publish
+- [x] Provide Cloudflare hosting guide
