@@ -120,7 +120,7 @@ function Numerology() {
 
           <div className="mt-12 grid gap-8 lg:grid-cols-3">
             {reports.map((r) => (
-              <div key={r.title} className="rounded-2xl bg-card p-8 shadow-sm">
+              <div key={r.title} className="card-soothe rounded-2xl p-8 shadow-sm">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <r.icon className="h-7 w-7" />
                 </div>

@@ -166,7 +166,7 @@ function RestSessions() {
           </h2>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {phases.map((phase, i) => (
-              <div key={phase.title} className="rounded-2xl bg-card p-8 shadow-sm">
+              <div key={phase.title} className="card-soothe rounded-2xl p-8 shadow-sm">
                 <span className="flex h-9 w-9 items-center justify-center rounded-full bg-primary/10 text-sm font-semibold text-primary">
                   {i + 1}
                 </span>
@@ -198,7 +198,7 @@ function RestSessions() {
           </div>
           <div className="mt-12 grid gap-8 md:grid-cols-3">
             {levels.map((l) => (
-              <div key={l.title} className="rounded-2xl border border-border bg-card p-8">
+              <div key={l.title} className="card-soothe rounded-2xl border border-border p-8">
                 <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
                   <l.icon className="h-7 w-7" />
                 </div>
