@@ -145,6 +145,19 @@
   padding-bottom: 5rem;
 }
 
+@utility card-soothe {
+  background-color: var(--color-card);
+  background-image:
+    linear-gradient(
+      to bottom right,
+      oklch(0.99 0.005 120 / 82%),
+      oklch(0.985 0.01 85 / 72%)
+    ),
+    url("./assets/card-texture.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
 @utility container-tight {
   width: 100%;
   max-width: 72rem;

@@ -219,7 +219,7 @@ function Approach() {
           {steps.map((step, index) => (
             <div
               key={step.title}
-              className="group relative rounded-2xl bg-card p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
+              className="card-soothe group relative rounded-2xl p-8 shadow-sm transition-all hover:-translate-y-1 hover:shadow-md"
             >
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary transition-colors group-hover:bg-primary group-hover:text-primary-foreground">
                 <step.icon className="h-7 w-7" />
@@ -306,7 +306,7 @@ function Services() {
           {services.map((service) => (
             <div
               key={service.title}
-              className="rounded-2xl border border-border bg-card p-6 transition-all hover:border-primary/30 hover:shadow-md"
+              className="card-soothe rounded-2xl border border-border p-6 transition-all hover:border-primary/30 hover:shadow-md"
             >
               <div className="flex h-12 w-12 items-center justify-center rounded-xl bg-secondary text-primary">
                 <service.icon className="h-6 w-6" />

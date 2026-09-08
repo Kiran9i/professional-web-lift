@@ -82,7 +82,7 @@ function Shop() {
 
         <div className="container-tight mt-14 grid gap-8 md:grid-cols-3">
           {includes.map((item) => (
-            <div key={item.title} className="rounded-2xl border border-border bg-card p-8">
+            <div key={item.title} className="card-soothe rounded-2xl border border-border p-8">
               <div className="flex h-14 w-14 items-center justify-center rounded-xl bg-primary/10 text-primary">
                 <item.icon className="h-7 w-7" />
               </div>
