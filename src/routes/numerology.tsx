@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, User, Building2, Baby } from "lucide-react";
+import numerologyTitleBg from "@/assets/numerology-title-bg.jpg";
 
 const CALL =
   "https://docs.google.com/forms/d/e/1FAIpQLSd-Cs0K2RDb6ydOPFZkpp7i6qBIWnuuJvkAxIljgiJCgLb84A/viewform?usp=pp_url";
@@ -66,13 +67,22 @@ function Numerology() {
 
   return (
     <main>
-      <section className="section-padding bg-secondary/40 pt-32">
-        <div className="container-tight mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary">Numerology</p>
-          <h1 className="mt-3 text-4xl font-medium text-foreground sm:text-5xl md:text-6xl">
+      <section className="relative flex min-h-[420px] items-center overflow-hidden py-24 sm:min-h-[500px]">
+        <img
+          src={numerologyTitleBg}
+          alt="A cosmic night sky with elegant sacred geometry over a mountain lake"
+          className="absolute inset-0 h-full w-full object-cover"
+          width={1920}
+          height={1088}
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-foreground/55" />
+        <div className="container-tight relative z-10 mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary-foreground/80">Numerology</p>
+          <h1 className="mt-3 text-4xl font-medium text-primary-foreground sm:text-5xl md:text-6xl">
             The Cosmic Code Report
           </h1>
-          <p className="mt-5 text-xl font-light text-muted-foreground">
+          <p className="mt-5 text-xl font-light text-primary-foreground/90">
             Your personal vibrations — the code you were born with.
           </p>
         </div>

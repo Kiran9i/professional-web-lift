@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { Droplets, Palette, Sparkles } from "lucide-react";
+import chakraShopTitleBg from "@/assets/chakra-shop-title-bg.jpg";
 
 export const Route = createFileRoute("/shop")({
   head: () => ({
@@ -44,13 +45,22 @@ function Shop() {
 
   return (
     <main>
-      <section className="section-padding bg-secondary/40 pt-32">
-        <div className="container-tight mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary">Shop</p>
-          <h1 className="mt-3 text-4xl font-medium text-foreground sm:text-5xl md:text-6xl">
+      <section className="relative flex min-h-[420px] items-center overflow-hidden py-24 sm:min-h-[500px]">
+        <img
+          src={chakraShopTitleBg}
+          alt="Seven colourful handcrafted chakra soaps in a natural bathing ritual setting"
+          className="absolute inset-0 h-full w-full object-cover"
+          width={1920}
+          height={1088}
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-foreground/60" />
+        <div className="container-tight relative z-10 mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary-foreground/80">Shop</p>
+          <h1 className="mt-3 text-4xl font-medium text-primary-foreground sm:text-5xl md:text-6xl">
             Conscious Bathing Ritual
           </h1>
-          <p className="mt-5 text-xl font-light text-muted-foreground">
+          <p className="mt-5 text-xl font-light text-primary-foreground/90">
             Chakra soaps with a guided kit, created with a collaborating chakra therapist.
           </p>
         </div>
