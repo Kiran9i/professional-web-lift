@@ -1,5 +1,6 @@
 import { createFileRoute } from "@tanstack/react-router";
 import { ArrowRight, Brain, Heart, Sparkles, CheckCircle2 } from "lucide-react";
+import restTitleBg from "@/assets/rest-title-bg.jpg";
 
 const MASTERCLASS =
   "https://docs.google.com/forms/d/e/1FAIpQLSfgZpa19D-9Nn01wnz9ll7VAVjOuRNC6srAv_cbMPmvI7d6oQ/viewform?usp=pp_url";
@@ -104,15 +105,24 @@ function RestSessions() {
 
   return (
     <main>
-      <section className="section-padding bg-secondary/40 pt-32">
-        <div className="container-tight mx-auto max-w-3xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-widest text-primary">
+      <section className="relative flex min-h-[420px] items-center overflow-hidden py-24 sm:min-h-[500px]">
+        <img
+          src={restTitleBg}
+          alt="A peaceful meditation setting surrounded by nature"
+          className="absolute inset-0 h-full w-full object-cover"
+          width={1920}
+          height={1088}
+          fetchPriority="high"
+        />
+        <div className="absolute inset-0 bg-foreground/60" />
+        <div className="container-tight relative z-10 mx-auto max-w-3xl text-center">
+          <p className="text-sm font-semibold uppercase tracking-widest text-primary-foreground/80">
             Rapid Evolve Self Transformation
           </p>
-          <h1 className="mt-3 text-4xl font-medium text-foreground sm:text-5xl md:text-6xl">
+          <h1 className="mt-3 text-4xl font-medium text-primary-foreground sm:text-5xl md:text-6xl">
             R.E.S.T Sessions
           </h1>
-          <p className="mt-5 text-xl font-light text-muted-foreground">
+          <p className="mt-5 text-xl font-light text-primary-foreground/90">
             REST in peace while you live — not just after.
           </p>
         </div>
