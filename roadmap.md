@@ -12,4 +12,4 @@
 - [x] Verify GUI end-to-end, then publish
 - [x] Provide Cloudflare hosting guide
 - [x] Replace MindTatvas references in My Philosophy with Neuro Pathway
-- [ ] Add approved title images to R.E.S.T Sessions, Numero Cosmic Code, and Shop pages
+- [x] Add approved title images to R.E.S.T Sessions, Numero Cosmic Code, and Shop pages
