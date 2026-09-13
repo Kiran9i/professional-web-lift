@@ -129,7 +129,7 @@ function About() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-primary">About Me</p>
             <h2 className="mt-3 text-4xl font-medium text-foreground sm:text-5xl">
-              I'm Shetall, creator of R.E.S.T Sessions and a Graphologist
+              I'm Shetall, creator of R.E.S.T Sessions
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               <span className="font-semibold text-foreground">Rapid Evolve Self Transformation</span>{" "}
@@ -138,6 +138,9 @@ function About() {
                 Clinical Hypnosis, Trans-personal Regression, past life regressions, NLP, CBT and Neuro Science Principles
               </span>
               .
+            </p>
+            <p className="mt-4 text-sm font-medium uppercase tracking-widest text-primary">
+              Graphologist
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               I believe any issue in our life is not from today — we carry many fragments of the same issue from the past. The root cause in the past needs to be identified to fix the current surfaced issue.
