@@ -397,18 +397,20 @@ function Testimonials() {
             <figure
               key={`${review.name}-${index}`}
 
-              className="card-soothe relative flex flex-col rounded-2xl p-8 shadow-sm"
+              className="card-soothe relative flex flex-col rounded-xl p-5 shadow-sm"
             >
-              <Quote className="h-8 w-8 text-primary/30" />
-              <div className="mt-4 flex gap-1" aria-label="5 out of 5 stars">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
-                ))}
+              <div className="flex items-center justify-between">
+                <Quote className="h-5 w-5 text-primary/30" />
+                <div className="flex gap-0.5" aria-label="5 out of 5 stars">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star key={i} className="h-3.5 w-3.5 fill-amber-400 text-amber-400" />
+                  ))}
+                </div>
               </div>
-              <blockquote className="mt-4 flex-1 text-lg leading-relaxed text-card-foreground">
+              <blockquote className="mt-3 flex-1 text-sm leading-relaxed text-muted-foreground">
                 "{review.text}"
               </blockquote>
-              <figcaption className="mt-6 font-serif text-xl italic text-primary">
+              <figcaption className="mt-4 font-serif text-base italic text-primary">
                 — {review.name}
               </figcaption>
             </figure>
