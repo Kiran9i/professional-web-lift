@@ -129,7 +129,7 @@ function About() {
           <div>
             <p className="text-sm font-semibold uppercase tracking-widest text-primary">About Me</p>
             <h2 className="mt-3 text-4xl font-medium text-foreground sm:text-5xl">
-              I'm Shetall, creator of R.E.S.T Sessions
+              I'm Shetall, creator of R.E.S.T Sessions and a Graphologist
             </h2>
             <p className="mt-6 text-lg leading-relaxed text-muted-foreground">
               <span className="font-semibold text-foreground">Rapid Evolve Self Transformation</span>{" "}
@@ -161,7 +161,7 @@ function Philosophy() {
       <div className="container-tight mx-auto max-w-3xl text-center">
         <p className="text-sm font-semibold uppercase tracking-widest text-primary">My Philosophy</p>
         <h2 className="mt-3 text-4xl font-medium text-foreground sm:text-5xl">
-          Rest in Peace While You Are Living
+          Rest In Peace While You Live, Not When You Die
         </h2>
         <p className="mt-6 text-xl font-medium leading-relaxed text-foreground">
           This tagline is more than a phrase — it is the heart of Neuro Pathway.
@@ -211,7 +211,7 @@ function Approach() {
             Rapid Evolve Session Approach
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            A three-layer healing journey that moves from present beliefs, through life experiences, to ancestral patterns.
+            A Three Layer Self Transformation.
           </p>
         </div>
 
@@ -273,7 +273,7 @@ function Services() {
     },
     {
       icon: Utensils,
-      title: "Eating Habits",
+      title: "Eating Habits & Food Cravings",
       description:
         "Reduce cravings for foods that don't serve your health. In just one Rapid Evolve Session, move toward a healthier lifestyle.",
     },

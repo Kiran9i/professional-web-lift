@@ -10,6 +10,7 @@
 
 import { Route as rootRouteImport } from './routes/__root'
 import { Route as IndexRouteImport } from './routes/index'
+import { Route as GraphologyRouteImport } from './routes/graphology'
 import { Route as NumerologyRouteImport } from './routes/numerology'
 import { Route as RestSessionsRouteImport } from './routes/rest-sessions'
 import { Route as ShopRouteImport } from './routes/shop'
@@ -17,6 +18,11 @@ import { Route as ShopRouteImport } from './routes/shop'
 const IndexRoute = IndexRouteImport.update({
   id: '/',
   path: '/',
+  getParentRoute: () => rootRouteImport,
+} as any)
+const GraphologyRoute = GraphologyRouteImport.update({
+  id: '/graphology',
+  path: '/graphology',
   getParentRoute: () => rootRouteImport,
 } as any)
 const NumerologyRoute = NumerologyRouteImport.update({
@@ -37,12 +43,14 @@ const ShopRoute = ShopRouteImport.update({
 
 export interface FileRoutesByFullPath {
   '/': typeof IndexRoute
+  '/graphology': typeof GraphologyRoute
   '/numerology': typeof NumerologyRoute
   '/rest-sessions': typeof RestSessionsRoute
   '/shop': typeof ShopRoute
 }
 export interface FileRoutesByTo {
   '/': typeof IndexRoute
+  '/graphology': typeof GraphologyRoute
   '/numerology': typeof NumerologyRoute
   '/rest-sessions': typeof RestSessionsRoute
   '/shop': typeof ShopRoute
@@ -50,20 +58,28 @@ export interface FileRoutesByTo {
 export interface FileRoutesById {
   __root__: typeof rootRouteImport
   '/': typeof IndexRoute
+  '/graphology': typeof GraphologyRoute
   '/numerology': typeof NumerologyRoute
   '/rest-sessions': typeof RestSessionsRoute
   '/shop': typeof ShopRoute
 }
 export interface FileRouteTypes {
   fileRoutesByFullPath: FileRoutesByFullPath
-  fullPaths: '/' | '/numerology' | '/rest-sessions' | '/shop'
+  fullPaths: '/' | '/graphology' | '/numerology' | '/rest-sessions' | '/shop'
   fileRoutesByTo: FileRoutesByTo
-  to: '/' | '/numerology' | '/rest-sessions' | '/shop'
-  id: '__root__' | '/' | '/numerology' | '/rest-sessions' | '/shop'
+  to: '/' | '/graphology' | '/numerology' | '/rest-sessions' | '/shop'
+  id:
+    | '__root__'
+    | '/'
+    | '/graphology'
+    | '/numerology'
+    | '/rest-sessions'
+    | '/shop'
   fileRoutesById: FileRoutesById
 }
 export interface RootRouteChildren {
   IndexRoute: typeof IndexRoute
+  GraphologyRoute: typeof GraphologyRoute
   NumerologyRoute: typeof NumerologyRoute
   RestSessionsRoute: typeof RestSessionsRoute
   ShopRoute: typeof ShopRoute
@@ -76,6 +92,13 @@ declare module '@tanstack/react-router' {
       path: '/'
       fullPath: '/'
       preLoaderRoute: typeof IndexRouteImport
+      parentRoute: typeof rootRouteImport
+    }
+    '/graphology': {
+      id: '/graphology'
+      path: '/graphology'
+      fullPath: '/graphology'
+      preLoaderRoute: typeof GraphologyRouteImport
       parentRoute: typeof rootRouteImport
     }
     '/numerology': {
@@ -104,6 +127,7 @@ declare module '@tanstack/react-router' {
 
 const rootRouteChildren: RootRouteChildren = {
   IndexRoute: IndexRoute,
+  GraphologyRoute: GraphologyRoute,
   NumerologyRoute: NumerologyRoute,
   RestSessionsRoute: RestSessionsRoute,
   ShopRoute: ShopRoute,
