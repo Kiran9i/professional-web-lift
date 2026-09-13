@@ -13,6 +13,8 @@ import {
   Hash,
   ArrowRight,
   Play,
+  Star,
+  Quote,
 } from "lucide-react";
 
 import heroBg from "@/assets/hero-bg.jpg";
@@ -362,6 +364,33 @@ function Testimonials() {
                 <p className="font-medium text-card-foreground">{video.title}</p>
               </div>
             </div>
+          ))}
+        </div>
+
+        <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
+          {[
+            {
+              name: "Kiran",
+              text: "I had completely different mindset about Hypnotherapy, but as all my myths are busted now and after the sessions, I can say it's safe and it works as well. I am very much likely to resolve other issues as well like the addiction I had before which is no more now. Thanks Shetall, you are the best.",
+            },
+          ].map((review) => (
+            <figure
+              key={review.name}
+              className="card-soothe relative flex flex-col rounded-2xl p-8 shadow-sm"
+            >
+              <Quote className="h-8 w-8 text-primary/30" />
+              <div className="mt-4 flex gap-1" aria-label="5 out of 5 stars">
+                {Array.from({ length: 5 }).map((_, i) => (
+                  <Star key={i} className="h-5 w-5 fill-amber-400 text-amber-400" />
+                ))}
+              </div>
+              <blockquote className="mt-4 flex-1 text-lg leading-relaxed text-card-foreground">
+                "{review.text}"
+              </blockquote>
+              <figcaption className="mt-6 font-serif text-xl italic text-primary">
+                — {review.name}
+              </figcaption>
+            </figure>
           ))}
         </div>
       </div>
