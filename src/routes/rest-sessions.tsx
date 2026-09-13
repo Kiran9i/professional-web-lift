@@ -123,7 +123,7 @@ function RestSessions() {
             R.E.S.T Sessions
           </h1>
           <p className="mt-5 text-xl font-light text-primary-foreground/90">
-            Changing Your Reality
+            Rest In Peace While You Live, Not When You Die
           </p>
         </div>
       </section>
