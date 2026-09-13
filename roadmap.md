@@ -13,3 +13,5 @@
 - [x] Provide Cloudflare hosting guide
 - [x] Replace MindTatvas references in My Philosophy with Neuro Pathway
 - [x] Add approved title images to R.E.S.T Sessions, Numero Cosmic Code, and Shop pages
+- [x] Update About, Philosophy, Method, and Eating Habits wording
+- [x] Add Graphology service page and Services submenu link

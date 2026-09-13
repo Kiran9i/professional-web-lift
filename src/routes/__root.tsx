@@ -141,6 +141,7 @@ const NAV: NavItem[] = [
     children: [
       { label: "R.E.S.T Sessions", to: "/rest-sessions" },
       { label: "Numero Cosmic Code", to: "/numerology" },
+      { label: "Graphology", to: "/graphology" },
     ],
   },
   { label: "Testimonials", href: "/#testimonials" },
