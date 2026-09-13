@@ -373,9 +373,30 @@ function Testimonials() {
               name: "Kiran",
               text: "I had completely different mindset about Hypnotherapy, but as all my myths are busted now and after the sessions, I can say it's safe and it works as well. I am very much likely to resolve other issues as well like the addiction I had before which is no more now. Thanks Shetall, you are the best.",
             },
-          ].map((review) => (
+            {
+              name: "Anjana",
+              text: "You are one of the few in this profession, who's intention is to help the client by going to the root cause of issue, and not by money making by suggesting to undergo a number of therapies.",
+            },
+            {
+              name: "Himani",
+              text: "My belief about scarcity of money has gone down, I have now stopped getting bothered about financial insecurity and doing my actions as required. I would like to thank Shetall from core of my heart to work on my issue. She takes complete care and makes sure that issue is resolved.",
+            },
+            {
+              name: "Garima",
+              text: "I'm so grateful for your support for last 1 year, it has transformed me completely, I have never been better before. Although situation is same but I'm always happy and able to face it and overcome it without loosing my mental peace. So grateful to have you there for support.",
+            },
+            {
+              name: "Anjana",
+              text: "Got the courage to speak up for myself without getting emotional or angry. A sense of freedom without being attached to the notion of society. Feeling comfortable the way I like rather than behaviour of hiding. More aware about the way I react and how to deal with it. Less judgemental, increased focus.",
+            },
+            {
+              name: "Anastasia",
+              text: "Able to handle my daughter more calmly, I have reduced my anger and control issues. Made some conscious decisions to change my life, I feel calm and happier in general as well. Thanks Shetall for everything.",
+            },
+          ].map((review, index) => (
             <figure
-              key={review.name}
+              key={`${review.name}-${index}`}
+
               className="card-soothe relative flex flex-col rounded-2xl p-8 shadow-sm"
             >
               <Quote className="h-8 w-8 text-primary/30" />
