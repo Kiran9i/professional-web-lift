@@ -370,10 +370,6 @@ function Testimonials() {
         <div className="mt-14 grid gap-8 md:grid-cols-2 lg:grid-cols-3">
           {[
             {
-              name: "Kiran",
-              text: "I had completely different mindset about Hypnotherapy, but as all my myths are busted now and after the sessions, I can say it's safe and it works as well. I am very much likely to resolve other issues as well like the addiction I had before which is no more now. Thanks Shetall, you are the best.",
-            },
-            {
               name: "Anjana",
               text: "You are one of the few in this profession, who's intention is to help the client by going to the root cause of issue, and not by money making by suggesting to undergo a number of therapies.",
             },
@@ -392,6 +388,10 @@ function Testimonials() {
             {
               name: "Anastasia",
               text: "Able to handle my daughter more calmly, I have reduced my anger and control issues. Made some conscious decisions to change my life, I feel calm and happier in general as well. Thanks Shetall for everything.",
+            },
+            {
+              name: "Kiran",
+              text: "I had completely different mindset about Hypnotherapy, but as all my myths are busted now and after the sessions, I can say it's safe and it works as well. I am very much likely to resolve other issues as well like the addiction I had before which is no more now. Thanks Shetall, you are the best.",
             },
           ].map((review, index) => (
             <figure
