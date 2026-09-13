@@ -138,10 +138,10 @@ function RestSessions() {
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               We first identify the problem using an approach that combines Clinical Hypnotherapy,
-              Transpersonal Regression, Past Life Regression, NLP, CBT, Psychotherapy and Neuro
-              Science. It is the most effective and logical way to change your perception and release
-              stuck emotions from your past — working deeply on the aura body, physical body and
-              mental body.
+              Transpersonal Regression, Past Life Regression, NLP, CBT, Psychotherapy, Neuro Science
+              and Graphology. It is the most effective and logical way to change your perception and
+              release stuck emotions from your past — working deeply on the aura body, physical body
+              and mental body.
             </p>
           </div>
           <div>
