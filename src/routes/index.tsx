@@ -135,12 +135,9 @@ function About() {
               <span className="font-semibold text-foreground">Rapid Evolve Self Transformation</span>{" "}
               is a scientific approach to resolve deep rooted patterns. It combines{" "}
               <span className="italic text-foreground">
-                Clinical Hypnosis, Trans-personal Regression, past life regressions, NLP, CBT and Neuro Science Principles
+                Clinical Hypnosis, Trans-personal Regression, past life regressions, NLP, CBT, Neuro Science Principles and Graphology
               </span>
               .
-            </p>
-            <p className="mt-4 text-sm font-medium uppercase tracking-widest text-primary">
-              Graphologist
             </p>
             <p className="mt-4 text-lg leading-relaxed text-muted-foreground">
               I believe any issue in our life is not from today — we carry many fragments of the same issue from the past. The root cause in the past needs to be identified to fix the current surfaced issue.
