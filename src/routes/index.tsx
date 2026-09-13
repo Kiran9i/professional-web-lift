@@ -211,7 +211,7 @@ function Approach() {
             Rapid Evolve Session Approach
           </h2>
           <p className="mt-4 text-lg text-muted-foreground">
-            A Three Layer Self Transformation.
+            A Three Layer Self Transformation Journey
           </p>
         </div>
 
